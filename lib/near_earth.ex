@@ -1,0 +1,2 @@
+defmodule NearEarth do
+end
