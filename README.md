@@ -1,6 +1,6 @@
 # NearEarth
 
-**TODO: Add description**
+Library for connecting to NASA's Near Earth Object Web Service.
 
 ## Installation
 

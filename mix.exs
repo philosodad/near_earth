@@ -14,7 +14,7 @@ defmodule NearEarth.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger]]
+    [applications: [:logger, :httpoison, :env_helper]]
   end
 
   # Dependencies can be Hex packages:
@@ -27,6 +27,9 @@ defmodule NearEarth.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [
+      {:env_helper, "~> 0.0.4"},
+      {:httpoison, "~> 0.10.0"}
+    ]
   end
 end
