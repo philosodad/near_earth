@@ -4,11 +4,11 @@ defmodule NearEarth.Mixfile do
   def project do
     [app: :near_earth,
      version: "0.0.1",
-     elixir: "~> 1.2",
+     elixir: "~> 1.4",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      elixirc_paths: elixirc_paths(Mix.env),
-     deps: deps]
+     deps: deps()]
   end
 
   # Configuration for the OTP application
@@ -31,7 +31,9 @@ defmodule NearEarth.Mixfile do
     [
       {:env_helper, "~> 0.0.4"},
       {:httpoison, "~> 0.10.0"},
-      {:poison, "~> 3.0"}
+      {:poison, "~> 3.0"},
+      {:stash, "~> 1.0"},
+      {:faker, "~> 0.9.0", only: [:dev, :test]}
     ]
   end
 
